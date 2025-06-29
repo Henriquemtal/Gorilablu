@@ -1,0 +1,3 @@
+# Netlify redirects file
+/.netlify/functions/* /.netlify/functions/:splat 200
+
