@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa Família: Empréstimo Rápido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Ícones de Font Awesome 6 para o avatar e pontos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID_AQUI'); // SUBSTITUA SEU_PIXEL_ID_AQUI PELO SEU ID DO PIXEL
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body>
+    <div class="chat-container-wrapper">
+        <!-- Tela de Boas-Vindas (Landing Page) -->
+        <div id="welcome-screen" class="welcome-screen active">
+            <div class="welcome-content">
+                <div class="welcome-section-1">
+                    <p class="money-emoji">💸</p>
+                    <h1>Empréstimo do Bolsa Família Liberado!</h1>
+                    <p class="subtitle">Até R$710 direto no seu Caixa Tem</p>
+                    <p class="description">Sem consulta ao SPC/Serasa. Sem burocracia. Liberação rápida no app!</p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="welcome-section-2">
+                    <div class="bot-avatar welcome-avatar">
+                        <i class="fas fa-user-tie"></i> <!-- Ícone para "Amélia" na página de boas-vindas -->
+                    </div>
+                    <p class="agent-intro">A Amélia vai te ajudar!</p>
+                    <p class="offer-details">Você que recebe o Bolsa Família com o cartão ativo, pode ter direito a um empréstimo especial. 👉 Valores entre R$500 e R$710 com desconto direto em folha.</p>
+                </div>
+
+                <!-- NOVO BOTÃO AQUI -->
+                <button id="secondary-start-button" class="secondary-start-button">
+                    Quero saber mais sobre o Empréstimo!
+                </button>
+
+                <div class="divider"></div>
+
+                <ul class="benefit-list">
+                    <li><i class="fas fa-check-circle"></i> Sem consulta ao nome</li>
+                    <li><i class="fas fa-check-circle"></i> Cadastro Único atualizado</li>
+                    <li><i class="fas fa-check-circle"></i> Liberação pelo app</li>
+                    <li><i class="fas fa-check-circle"></i> Totalmente seguro e autorizado</li>
+                    <li><i class="fas fa-check-circle"></i> Dinheiro direto na conta</li>
+                </ul>
+
+                <div class="divider"></div>
+
+                <p class="attention-text">🚨 Atenção: Vagas limitadas para análise automática.<br>Garanta agora sua simulação gratuita.</p>
+
+                <button id="start-button" class="start-button neon-effect">
+                    <i class="fas fa-hand-point-right"></i> SIMULE AGORA MESMO <i class="fas fa-hand-point-left"></i>
+                </button>
+
+                <p class="security-text">🛡️ Página 100% segura | Seus dados estão protegidos</p>
+            </div>
+        </div>
+
+        <!-- Tela do Chat -->
+        <div id="chat-screen" class="chat-screen">
+            <div class="chat-header">
+                <div class="bot-info">
+                    <div class="bot-avatar">
+                        <i class="fas fa-robot"></i> <!-- Ícone de robô para a assistente -->
+                    </div>
+                    <div class="bot-details">
+                        <h1>Amélia, sua assistente</h1>
+                        <span id="bot-status" class="status-online">Online</span>
+                    </div>
+                </div>
+            </div>
+            <div id="chat-container" class="chat-messages">
+                <!-- Mensagens do chat e botões de resposta rápida serão inseridos aqui via JavaScript -->
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button id="send-button">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M2.01 21.01L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
